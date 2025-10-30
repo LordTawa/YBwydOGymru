@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Spice Pot Menu</title>
+  <link rel="icon" type="image/png" href="Favicon.png">
+  <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="SpicePot.css">
+
+  <p style="font-size: 0px;"> 
+  ___ _____ _ ____    _____  ___        ___      _____ ___ __  __ _____ 
+ |_ _|_   _( ) ___|  |_   _|/ \ \      / / \    |_   _|_ _|  \/  | ____|
+  | |  | | |/\___ \    | | / _ \ \ /\ / / _ \     | |  | || |\/| |  _|  
+  | |  | |    ___) |   | |/ ___ \ V  V / ___ \    | |  | || |  | | |___ 
+ |___| |_|   |____/    |_/_/   \_\_/\_/_/   \_\   |_| |___|_|  |_|_____|
+ 
+  </p>
+  
+</head>
+
+<script>
+  document.addEventListener("DOMContentLoaded", () => {
+    const hamburger = document.querySelector(".hamburger");
+    const navLinks = document.querySelector(".nav-links");
+
+    hamburger.addEventListener("click", () => {
+      navLinks.classList.toggle("active");
+      hamburger.classList.toggle("active");
+    });
+  });
+</script>
+
+<body>
+<div class="header header--sticky">
+  <div class="header__inner">
+    <div class="header-logo">
+      <a href="index.html" class="header-logo__inner" aria-label="Home">
+        <img src="LogoCondensed.png" alt="House of Africa Logo">
+      </a>
+    </div>
+    <nav class="site-nav">
+      <ul class="site-nav__desktop">
+        <li class="site-nav__item">
+          <a href="#starters" class="nav-gold">Starters</a>
+        </li>
+        <li class="site-nav__item">
+          <a href="#mains" class="nav-green">Mains</a>
+        </li>
+        <li class="site-nav__item">
+          <a href="#desserts" class="nav-red">Desserts</a>
+        </li>
+        <li class="site-nav__item">
+          <a href="#drinks" class="nav-blue">Drinks</a>
+        </li>
+        <li class="site-nav__item">
+			<a href="#contact" class="nav-gold">Contact</a></li>
+      </ul>
+<!-- MOBILE HAMBURGUR-->
+      <div class="hamburger">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+	</nav>
+  </div>
+</div>
+  <section id="home" class="hero">
+    <div class="hero-overlay">
+      <h1>The Spice Pot Menu</h1>
+      <p>Vibrant cultural flavours & spice-driven cuisine</p>
+      <a href="#menu" class="cta">Reserve a Table</a>
+    </div>
+  </section>
+
+  <section id="starters" class="startersbg">
+    <div class="about-divider">
+	 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+         <path fill="#FFB612" fill-opacity="1" d="M0,256L80,229.3C160,203,320,149,480,160C640,171,800,245,960,261.3C1120,277,1280,235,1360,213.3L1440,192L1440,320L1360,320C1280,320,1120,320,960,320C800,320,640,320,480,320C320,320,160,320,80,320L0,320Z"></path>
+       </svg>
+ 	<svg viewBox="0 0 1200 120" preserveAspectRatio="none">
+  	  <path d="M0,0 V60 Q300,120 600,60 T1200,60 V0z" fill="#FFB612"></path>
+  	</svg>
+    </div>
+    <div class="about-text">
+	    		    <h2 style="color: #FFB612; font-size: 7vw;">Starters</h2>
+	    <div class="card">
+		    <h2 class="card-title" style="color: #FFB612;">Durban Samoosas with Mint Chutney</h2>
+		    <div class="card-image">
+		        <img src="DurbanSamoosas.jpeg" alt="DurbanSamoosas" style="border: 6px solid #FFB612;">
+		    </div>
+		    <div class="card-text">
+			          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+		    </div>
+	   </div>
+<br>
+	    <div class="card">
+		    <h2 class="card-title" style="color: #FFB612;">Chili-Spiced Hake Skewers</h2>
+		    <div class="card-image">
+		        <img src="HakeSkewers.jpg" alt="HakeSkewers" style="border: 6px solid #FFB612;">
+		    </div>
+	    <div class="card-text">
+			          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+		    </div>
+	    </div>
+<br>
+	    <div class="card">
+		    <h2 class="card-title" style="color: #FFB612;">Bunny Chow Sliders</h2>
+		    <div class="card-image">
+		        <img src="ChowSliders.webp" alt="ChowSliders" style="border: 6px solid #FFB612;">
+		    </div>
+		    <div class="card-text">
+			          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+		    </div>
+	    </div>
+        </div>
+    </div>
+ 
+    </div>
+  </section>
+
+
+  <section id="mains" class="mainsbg">
+     <div class="divider">
+       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+         <path fill="#007A4D" fill-opacity="1" d="M0,256L80,229.3C160,203,320,149,480,160C640,171,800,245,960,261.3C1120,277,1280,235,1360,213.3L1440,192L1440,320L1360,320C1280,320,1120,320,960,320C800,320,640,320,480,320C320,320,160,320,80,320L0,320Z"></path>
+       </svg>
+       <svg viewBox="0 0 1200 120" preserveAspectRatio="none">
+         <path d="M0,0 V60 Q300,120 600,60 T1200,60 V0z" fill="#007A4D"></path>
+       </svg>
+     </div>
+    <div class="about-text">
+      <h2 style="color: #007A4D; font-size: 7vw;">Mains</h2>
+	    <div class="card">
+		    <h2 class="card-title" style="color: #007A4D;">Durban Chicken Curry</h2>
+		    <div class="card-image">
+		        <img src="ChickenCurry.jpeg" alt="ChickenCurry" style="border: 6px solid #007A4D;">
+		    </div>
+		    <div class="card-text">
+			          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+		    </div>
+	   </div>
+<br>
+	    <div class="card">
+		    <h2 class="card-title" style="color: #007A4D;">Vegetarian Lentil Curry with Roti</h2>
+		    <div class="card-image">
+		        <img src="LentilCurry.jpeg" alt="LentilCurry" style="border: 6px solid #007A4D;">
+		    </div>
+	    <div class="card-text">
+			          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+		    </div>
+	    </div>
+<br>
+	    <div class="card">
+		    <h2 class="card-title" style="color: #007A4D;">Lamb Biryani</h2>
+		    <div class="card-image">
+		        <img src="LambBiryani.jpeg" alt="LambBiryani" style="border: 6px solid #007A4D;">
+		    </div>
+		    <div class="card-text">
+			          <p> Allergy warning: Caramelised Onions & Cashews.</p>
+		    </div>
+	    </div>
+        </div>
+    </div>
+  </section>
+
+  <section id="desserts" class="dessertsbg">
+  <div class="divider">
+       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+         <path fill="#DE3831" fill-opacity="1" d="M0,256L80,229.3C160,203,320,149,480,160C640,171,800,245,960,261.3C1120,277,1280,235,1360,213.3L1440,192L1440,320L1360,320C1280,320,1120,320,960,320C800,320,640,320,480,320C320,320,160,320,80,320L0,320Z"></path>
+       </svg>
+
+    <svg viewBox="0 0 1200 120" preserveAspectRatio="none">
+      <path d="M0,0 V60 Q300,120 600,60 T1200,60 V0z" fill="#DE3831"></path>
+    </svg>
+  </div>
+    <div class="about-text">
+      <h2 style="color: #DE3831; font-size: 7vw;">Desserts</h2>
+        <div class="card">
+		    <h2 class="card-title" style="color: #DE3831;">Rose Syrup Cardamom Ice Cream</h2>
+		    <div class="card-image">
+		        <img src="CardamomIceCream.jpg" alt="CardamomIceCream" style="border: 6px solid #DE3831;">
+		    </div>
+		    <div class="card-text">
+			          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+		    </div>
+	   </div>
+<br>
+	    <div class="card">
+		    <h2 class="card-title" style="color: #DE3831;">Koeksisters (syrup-drenched pastries)</h2>
+		    <div class="card-image">
+		        <img src="Koeksisters.jpeg" alt="Koeksisters" style="border: 6px solid #DE3831;">
+		    </div>
+	    <div class="card-text">
+			          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+		    </div>
+	    </div>
+        </div>
+    </div>
+  </section>
+  <section id="drinks" class="drinksbg">
+  <div class="divider">
+       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+         <path fill="#002395" fill-opacity="1" d="M0,256L80,229.3C160,203,320,149,480,160C640,171,800,245,960,261.3C1120,277,1280,235,1360,213.3L1440,192L1440,320L1360,320C1280,320,1120,320,960,320C800,320,640,320,480,320C320,320,160,320,80,320L0,320Z"></path>
+       </svg>
+
+    <svg viewBox="0 0 1200 120" preserveAspectRatio="none">
+      <path d="M0,0 V60 Q300,120 600,60 T1200,60 V0z" fill="#002395"></path>
+    </svg>
+  </div>
+    <div class="about-text">
+      <h2 style="color: #002395; font-size: 7vw;">Drinks</h2>
+        <div class="card">
+		    <h2 class="card-title" style="color: #002395;">Spiced Chai Latte</h2>
+		    <div class="card-image">
+		        <img src="ChaiLatte.jpeg" alt="ChaiLatte" style="border: 6px solid #002395;">
+		    </div>
+		    <div class="card-text">
+			          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+		    </div>
+	    </div>
+<br>
+	    <div class="card">
+		    <h2 class="card-title" style="color: #002395;">Mango Lassi</h2>
+		    <div class="card-image">
+		        <img src="MangoLassi.jpg" alt="MangoLassi" style="border: 6px solid #002395;">
+		    </div>
+	        <div class="card-text">
+			          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+		    </div>
+	    </div>
+<br>
+		<div class="card">
+		    <h2 class="card-title" style="color: #002395;">Local Craft Beers</h2>
+		    <div class="card-image">
+		        <img src="CraftBeers.jpeg" alt="CraftBeers" style="border: 6px solid #002395;">
+		    </div>
+		    <div class="card-text">
+			          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+		</div>
+	    </div>
+        </div>
+    </div>
+  </section>
+
+  <section id="contact" class="contact">
+  <div class="divider">
+       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+         <path fill="#FFB612" fill-opacity="1" d="M0,256L80,229.3C160,203,320,149,480,160C640,171,800,245,960,261.3C1120,277,1280,235,1360,213.3L1440,192L1440,320L1360,320C1280,320,1120,320,960,320C800,320,640,320,480,320C320,320,160,320,80,320L0,320Z"></path>
+       </svg>
+    <svg viewBox="0 0 1200 120" preserveAspectRatio="none">
+      <path d="M0,0 V60 Q300,120 600,60 T1200,60 V0z" fill="#FFB612"></path>
+    </svg>
+  </div>
+  <div class="contact-overlay">
+    <h2 style="color: #FFB612;">Visit Us</h2>
+    <p>123 Main Street, [City]</p>
+    <a href="tel:+1234567890" class="cta">Call to Reserve</a>
+   </div>
+  </section>
+  
+  <footer>
+    <p>&copy; 2025 The House Of Africa | Designed with <i>love</i> by Tawa</p>
+  </footer>
+</body>
+</html>

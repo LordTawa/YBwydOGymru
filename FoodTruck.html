@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Food Truck</title>
+  <link rel="icon" type="image/png" href="Favicon.png">
+  <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="FoodTruck.css">
+
+  <p style="font-size: 0px;"> 
+  ___ _____ _ ____    _____  ___        ___      _____ ___ __  __ _____ 
+ |_ _|_   _( ) ___|  |_   _|/ \ \      / / \    |_   _|_ _|  \/  | ____|
+  | |  | | |/\___ \    | | / _ \ \ /\ / / _ \     | |  | || |\/| |  _|  
+  | |  | |    ___) |   | |/ ___ \ V  V / ___ \    | |  | || |  | | |___ 
+ |___| |_|   |____/    |_/_/   \_\_/\_/_/   \_\   |_| |___|_|  |_|_____|
+ 
+  </p>
+  
+</head>
+
+<script>
+  document.addEventListener("DOMContentLoaded", () => {
+    const hamburger = document.querySelector(".hamburger");
+    const navLinks = document.querySelector(".nav-links");
+
+    hamburger.addEventListener("click", () => {
+      navLinks.classList.toggle("active");
+      hamburger.classList.toggle("active");
+    });
+  });
+</script>
+
+<body>
+<div class="header header--sticky">
+  <div class="header__inner">
+    <div class="header-logo">
+      <a href="index.html" class="header-logo__inner" aria-label="Home">
+        <img src="LogoCondensed.png" alt="House of Africa Logo">
+      </a>
+    </div>
+    <nav class="site-nav">
+      <ul class="site-nav__desktop">
+        <li class="site-nav__item">
+          <a href="#starters" class="nav-gold">Main Site</a>
+        </li>
+        <li class="site-nav__item">
+          <a href="#mains" class="nav-green">Home</a>
+        </li>
+        <li class="site-nav__item">
+          <a href="#desserts" class="nav-red">Menu</a>
+		</li>
+        <li class="site-nav__item">
+			<a href="#contact" class="nav-blue">Contact</a></li>
+      </ul>
+<!-- MOBILE HAMBURGUR-->
+      <div class="hamburger">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+	</nav>
+  </div>
+</div>
+
+  <section id="home" class="hero">
+    <div class="hero-overlay">
+      <h1>The House Of Africa Food Truck</h1>
+      <p>Bringing Soweto energy to the streets of Hastings</p>
+    </div>
+  </section>
+
+  <section id="menu" class="startersbg">
+    <div class="about-divider">
+	 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+         <path fill="#FFB612" fill-opacity="1" d="M0,256L80,229.3C160,203,320,149,480,160C640,171,800,245,960,261.3C1120,277,1280,235,1360,213.3L1440,192L1440,320L1360,320C1280,320,1120,320,960,320C800,320,640,320,480,320C320,320,160,320,80,320L0,320Z"></path>
+       </svg>
+ 	<svg viewBox="0 0 1200 120" preserveAspectRatio="none">
+  	  <path d="M0,0 V60 Q300,120 600,60 T1200,60 V0z" fill="#FFB612"></path>
+  	</svg>
+    </div>
+    <div class="about-text">
+	    		    <h2 style="color: #FFB612; font-size: 7vw;">Menu</h2>
+	    <div class="card">
+		    <h2 class="card-title" style="color: #FFB612;">Kota Burgers</h2>
+		    <div class="card-image">
+		        <img src="KotaBurgers.jpeg" alt="KotaBurgers" style="border: 6px solid #FFB612;">
+		    </div>
+		    <div class="card-text">
+			          <p>Mini versions of the iconic Soweto “kota,” stuffed with beef, chicken, or vegetarian fillings, fries, and spicy sauces.</p>
+		    </div>
+	   </div>
+<br>
+	    <div class="card2">
+		    <h2 class="card2-title" style="color: #FFB612;">Pap & Chakalaka Bowls</h2>
+		    <div class="card2-image">
+		        <img src="ChakalakaBowls.jpeg" alt="ChalakaBowls" style="border: 6px solid #FFB612;">
+		    </div>
+	    	<div class="card2-text">
+			          <p>Traditional maize meal served with chakalaka (spicy vegetable relish) and grilled meats or plant-based options.</p>
+		    </div>
+	    </div>
+<br>
+	    <div class="card">
+		    <h2 class="card-title" style="color: #FFB612;">Grilled Chicken Wings</h2>
+		    <div class="card-image">
+		        <img src="ChickenWings.jpg" alt="ChickenWings" style="border: 6px solid #FFB612;">
+		    </div>
+		    <div class="card-text">
+			          <p>Authentic grilled chicken wings marinated in house-made peri-peri sauce.</p>
+		    </div>
+	    </div>
+<br>
+	    <div class="card2">
+		    <h2 class="card2-title" style="color: #FFB612;">Sweet Potato Doughnuts</h2>
+		    <div class="card2-image">
+		        <img src="PotatoDoughnuts.jpeg" alt="PotatoDoughnuts" style="border: 6px solid #FFB612;">
+		    </div>
+	    	<div class="card2-text">
+			          <p>Deep-fried treats coated in cinnamon sugar.</p>
+			</div>
+	    </div>
+<br>
+	    <div class="card">
+		    <h2 class="card-title" style="color: #FFB612;">Rooibos Iced Tea & Local Craft Drinks</h2>
+		    <div class="card-image">
+		        <img src="IcedTea.jpeg" alt="IcedTea" style="border: 6px solid #FFB612;">
+		    </div>
+		    <div class="card-text">
+			          <p>Refreshing South African-inspired beverages.</p>
+		    </div>
+	    </div>
+	</div>
+    </div>
+    </div>
+  </section>
+	
+  <section id="contact" class="contact">
+  <div class="divider">
+       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+         <path fill="#FFB612" fill-opacity="1" d="M0,256L80,229.3C160,203,320,149,480,160C640,171,800,245,960,261.3C1120,277,1280,235,1360,213.3L1440,192L1440,320L1360,320C1280,320,1120,320,960,320C800,320,640,320,480,320C320,320,160,320,80,320L0,320Z"></path>
+       </svg>
+    <svg viewBox="0 0 1200 120" preserveAspectRatio="none">
+      <path d="M0,0 V60 Q300,120 600,60 T1200,60 V0z" fill="#FFB612"></path>
+    </svg>
+  </div>
+  <div class="contact-overlay">
+    <h2 style="color: #FFB612;">Visit Us</h2>
+    <p>123 Main Street, [City]</p>
+    <a href="tel:+1234567890" class="cta">Call to Reserve</a>
+   </div>
+  </section>
+  
+  <footer>
+    <p>&copy; 2025 The House Of Africa | Designed with <i>love</i> by Tawa</p>
+  </footer>
+</body>
+</html>
