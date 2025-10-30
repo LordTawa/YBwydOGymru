@@ -27,7 +27,7 @@ h1 {
     margin-block-end: 0.67em;
     margin-inline-start: 0px;
     margin-inline-end: 0px;
-    font-weight: bold;
+    font-weight: 100;
     unicode-bidi: isolate;
 }
 
@@ -127,13 +127,14 @@ h1 {
 .hero-overlay {
   text-align: center;
   background: rgba(0, 0, 0, 0.7);
-  padding: 4rem;
+  padding: 2rem;
   border-radius: 12px;
   width: 80%;
+  margin-top: -10vh;
 }
 
 .hero-overlay h1 {
-  font-size: 3.5rem;
+  font-size: 4rem;
   color: #FFB612;
 }
 
