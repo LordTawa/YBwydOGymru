@@ -24,18 +24,6 @@ html, body {
   background: url('NeonLounge.png') center/cover no-repeat;
 }
 
-.SPBG {
-  background: url('SpicePot.png') center/cover no-repeat;
-}
-
-.OTFBG {
-  background: url('OverTheFire.png') center/cover no-repeat;
-}
-
-.MRBG {
-  background: url('MuralRoom.png') center/cover no-repeat;
-}
-
 /* Navbar Styles */
 .navbar {
   position: fixed;
