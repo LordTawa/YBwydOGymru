@@ -16,11 +16,11 @@ html, body {
   background: url('Background.jpg') center/cover no-repeat;
 }
 
-.CTBG {
+.RestaurantBG {
   background: url('CoastalTable.png') center/cover no-repeat;
 }
 
-.NLBG {
+.FoodTruckBG {
   background: url('RealLocation.jpg') center/cover no-repeat;
 }
 
