@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -56,7 +55,7 @@
 </div>
 <!-- HERO -->
   <section id="home" class="hero">
-    <div class="hero-overlay">
+    <div class="hero-overlay fade-section">
       <h1>Y Bywd O Gymru</h1>
       <p>Authentic Cymraeg cuisine brought into the streets of Hastings</p>
       <a href="Bookings.html" class="cta">Reserve a Table</a>
@@ -73,12 +72,12 @@
   	  <path d="M0,0 V60 Q300,120 600,60 T1200,60 V0z" fill="#FFB612"></path>
   	</svg>
     </div>
-    <div class="about-text">
+    <div class="about-text fade-section">
       <h2>Our Mission</h2>
       <p> Our mission is to bring the authentic taste of Welsh cuisine to Hawkes Bay. while remembering both the flavours of Wales and the connections we share with New Zealand's history, all while serving food made with love, care, and sustainability. <br><br>
 	Y Bwyd O Gymru serves a variety of traditional Welsh dishes that bring a taste of Wales directly to the streets of Hastings. Our menu is filled with rich Welsh food made with quality ingredients. Some of these include crempogs (Fluffy Welsh pancakes), Cawl Cennin (A classic leek and potato savoury soup), bara brith (a spiced fruit loaf), Welsh rarebit (a cheese and ale sauce on toast), and Glamorgan sausages (Welsh vegetarian sausage with cheese, leeks, and breadcrumbs) </p>
     </div>
-    <div class="about-image">
+    <div class="about-image fade-section">
       <img src="BWYD.jpg" alt="Crempogau and Cawl Cennin">
     </div>
   </section>
@@ -92,13 +91,13 @@
          <path d="M0,0 V60 Q300,120 600,60 T1200,60 V0z" fill="#007A4D"></path>
        </svg>
      </div>
-     <div class="card">
- 	    <h2 class="card-title" style="color: #007A4D;">Restaurant</h2>
-	  <div class="card-text">
+     <div class="card fade-section">
+ 	    <h2 class="card-title fade-section" style="color: #007A4D;">Restaurant</h2>
+	  <div class="card-text fade-section">
 		  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. <br><br> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
   	  </div>
- 	  <div class="card-link">
-	    <a href="CoastalTableMenu.html" class="card-link2">Menu</a>
+ 	  <div class="card-link fade-section">
+	    <a href="CoastalTableMenu.html" class="card-link">Menu</a>
  	  </div>
 	</div>
   </section>
@@ -112,12 +111,12 @@
       <path d="M0,0 V60 Q300,120 600,60 T1200,60 V0z" fill="#DE3831"></path>
     </svg>
   </div>
-	<div class="card2">
- 	    <h2 class="card2-title" style="color: #DE3831;">Food Truck</h2>
-	  <div class="card2-text">
+	<div class="card fade-section">
+ 	    <h2 class="card-title fade-section" style="color: #DE3831;">Food Truck</h2>
+	  <div class="card-text fade-section">
 		  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.<br><br> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
   	  </div>
- 	  <div class="card2-link">
+ 	  <div class="card-link fade-section">
 	    <a href="NeonLoungeMenu.html">Menu</a>
  	  </div>
 	</div>
@@ -132,7 +131,7 @@
       <path d="M0,0 V60 Q300,120 600,60 T1200,60 V0z" fill="#002395"></path>
     </svg>
   </div>
-  <div class="contact-overlay">
+  <div class="contact-overlay fade-section">
     <h2>Visit Us</h2>
     <p>123 Main Street, [City]</p>
     <a href="tel:+1234567890" class="cta">Call to Reserve</a>
@@ -141,78 +140,7 @@
   <footer>
     <p>&copy; 2025 Y Bwyd O Gymru | Designed with <i>love</i> by Tawa</p>
   </footer>
-<!-- JAVASCRIPT - THIS WILL BREAK IF YOU TOUCH IT - DON'T DO THAT-->
-<script>
-document.addEventListener("DOMContentLoaded", () => {
-  const header = document.querySelector(".header");
-  const hero = document.querySelector(".hero");
-  const hamburger = document.querySelector(".hamburger");
-  const nav = document.querySelector(".site-nav__desktop");
-
-  if (!header) {
-    console.warn("Header element not found — sticky script disabled.");
-    return;
-  }
-	
-  if (hamburger && nav) {
-    hamburger.addEventListener("click", (e) => {
-      e.stopPropagation();
-      hamburger.classList.toggle("active");
-      nav.classList.toggle("active");
-    });
-
-    document.addEventListener("click", (e) => {
-      if (!nav.contains(e.target) && !hamburger.contains(e.target)) {
-        nav.classList.remove("active");
-        hamburger.classList.remove("active");
-      }
-    });
-
-  } else {
-    console.info("LOL! THIS CODE IS BROKEN(hamburger:", !!hamburger, "nav:", !!nav, ")");
-  }
-
-
-  let lastScrollY = window.scrollY || 0;
-
-  const heroHeight = hero ? hero.offsetHeight : 0;
-  const heroBottom = Math.max(heroHeight * 0.8, 0);
-
-  header.classList.remove("header--hidden");
-
-  let ticking = false;
-  window.addEventListener("scroll", () => {
-    if (!ticking) {
-      window.requestAnimationFrame(() => {
-        const currentScroll = window.scrollY || 0;
-
-        if (currentScroll > heroBottom) {
-          header.classList.add("header--visible");
-        } else {
-          header.classList.remove("header--visible");
-        }
-
-        if (currentScroll > lastScrollY && currentScroll > heroBottom + 100) {
-          header.classList.add("header--hidden");
-        } else {
-          header.classList.remove("header--hidden");
-        }
-
-        lastScrollY = currentScroll;
-        ticking = false;
-      });
-      ticking = true;
-    }
-  });
-  window.addEventListener("resize", () => {
-    const desktopBreakpoint = 900; // 
-    if (window.innerWidth > desktopBreakpoint) {
-      nav && nav.classList.remove("active");
-      hamburger && hamburger.classList.remove("active");
-    }
-  });
-});
-</script>
+  <script src="main.js"></script> 
 </body>
 <!--PHEW-->
 </html>
