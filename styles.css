@@ -280,7 +280,7 @@ section {
 
 .contact-overlay {
   text-align: center;
-  background: rgba(0, 0, 0, 0.7);
+  background: rgba(255, 255, 255, 0.7);
   padding: 2rem;
   border-radius: 12px;
 }
@@ -496,7 +496,7 @@ section {
   position: absolute;
   top: 100%;
   left: 0;
-  background: rgba(20, 20, 20, 0.95);
+  background: rgba(255, 255, 255, 0.95);
   border-radius: 6px;
   min-width: 180px;
   display: flex;
@@ -510,7 +510,7 @@ section {
 
 .header-dropdown__link {
   padding: 0.6rem 1rem;
-  color: #fff;
+  color: #000;
   text-decoration: none;
   transition: background 0.3s ease;
 }
@@ -573,7 +573,7 @@ section {
   .site-nav__desktop {
     display: none;
     flex-direction: column;
-    background: rgba(0, 0, 0, 0.95);
+    background: rgba(255, 255, 255, 0.95);
     position: absolute;
     top: 100%;
     right: 0;
@@ -622,7 +622,7 @@ section {
   .site-nav__desktop {
     display: none;
     flex-direction: column;
-    background: rgba(0, 0, 0, 0.95);
+    background: rgba(255, 255, 255, 0.95);
     position: absolute;
     top: 100%;
     right: 0;
