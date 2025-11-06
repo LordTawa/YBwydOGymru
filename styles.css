@@ -354,8 +354,8 @@ section {
   margin: 0rem auto;
   padding: 2rem;
   border-radius: 12px;
-  color: #fff;
-  background: rgb(0, 0, 0, 0.7);
+  color: #000;
+  background: rgb(255, 255, 255, 0.7);
 }
 
 .card-title {
@@ -366,7 +366,7 @@ section {
   font-size: 4rem;
   margin-bottom: 2rem;
   font-weight: bold;
-  background: #111;
+  background: #fff;
 }
 
 .card-image {
