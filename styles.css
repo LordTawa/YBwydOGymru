@@ -7,7 +7,7 @@
 html, body {
   height: 100%;
   font-family: 'Barlow Condensed', sans-serif;
-  color: #fff;
+  color: #000;
   background: url('Background.jpg') center/cover no-repeat;
 }
 
@@ -32,7 +32,7 @@ html, body {
   top: 0;
   left: 0;
   width: 100%;
-  background: #000;
+  background: #FFF;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -75,7 +75,7 @@ html, body {
 }
 
 .nav-gold {
-	color: #FFFFFF; 
+	color: #000; 
 	padding: 0.5rem 0.8rem; 
 	border-radius: 5px; 
 }
@@ -88,12 +88,6 @@ html, body {
 
 .nav-red {
 	color: #DE3831;
-	padding: 0.5rem 0.8rem; 
-	border-radius: 5px; 
-}
-
-.nav-blue {
-	color: #FFFFF;
 	padding: 0.5rem 0.8rem; 
 	border-radius: 5px; 
 }
@@ -115,7 +109,7 @@ html, body {
 .hero-overlay {
   z-index: 1000;
   text-align: center;
-  background: rgba(0, 0, 0, 0.7);
+  background: rgba(255, 255, 255, 0.7);
   padding: 4rem;
   border-radius: 12px;
   width: 80%;
@@ -123,7 +117,7 @@ html, body {
 
 .hero-overlay h1 {
   font-size: 3.5rem;
-  color: #FFB612;
+  color: #DE3831;
 }
 
 .hero-overlay p {
@@ -153,7 +147,7 @@ html, body {
   flex-wrap: wrap;
   align-items: center;
   padding: 5rem 2rem;
-  background: #111;
+  background: #FFF;
 }
 
 .about-text {
@@ -179,7 +173,7 @@ html, body {
 
 .about-image img {
   width: 70%;
-  border: 6px solid #FFB612;
+  border: 6px solid #DE3831;
   border-radius: 10px;
 }
 
@@ -215,22 +209,22 @@ html, body {
 .contact {
   text-align: center;
   padding: 5rem 2rem;
-  background: #222;
+  background: #FFF;
 }
 
 .contact h2 {
   font-size: 2.5rem;
   margin-bottom: 1rem;
-  color: #FFFFFF;
+  color: #000;
 }
 
 /* Footer */
 footer {
-  background: #000;
+  background: #FFF;
   text-align: center;
   padding: 2rem 0rem;
   font-size: 0.9rem;
-  color: #ccc;
+  color: #000;
   width: 100%;
   margin-bottom: -10rem;
 }
