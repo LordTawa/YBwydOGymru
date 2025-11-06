@@ -385,7 +385,7 @@ section {
 
 .card-text {
   grid-area: text;
-  background: #222;
+  background: #fff;
   padding: 1rem;
   border-radius: 10px;
 }
