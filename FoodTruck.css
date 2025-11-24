@@ -4,6 +4,10 @@
   box-sizing: border-box;
 }
 
+.startersbg {
+  background: url('FoodTruck.jpg') center/cover no-repeat;
+}
+
 html, body {
   height: 100%;
   font-family: 'Barlow Condensed', sans-serif;
