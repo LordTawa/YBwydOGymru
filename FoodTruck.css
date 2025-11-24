@@ -16,8 +16,8 @@
 html, body {
   height: 100%;
   font-family: 'Barlow Condensed', sans-serif;
-  color: #fff;
-  background: url('CoastalTable.png') center/cover no-repeat;
+  color: #000;
+  background: url('Background.jpg') center/cover no-repeat;
 }
 
 h2 {
@@ -50,7 +50,7 @@ h2 {
   top: 0;
   left: 0;
   width: 100%;
-  background: #000;
+  background: #FFF;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -83,32 +83,29 @@ h2 {
   font-size: 1.1rem;
   transition: transform 0.3s ease;
 }
-
 .nav-black {
-  color: #000; 
-  background: #fff; 
-  padding: 0.5rem 0.8rem; 
-  border-radius: 5px; 
+	color: #000; 
+	background: #fff; 
+	padding: 0.5rem 0.8rem; 
+	border-radius: 5px; 
 }
+
 .nav-gold {
-  color: #FFB612; 
-  padding: 0.5rem 0.8rem; 
-  border-radius: 5px; 
+	color: #000; 
+	padding: 0.5rem 0.8rem; 
+	border-radius: 5px; 
 }
+
 .nav-green {
-  color: #007A4D; 
-  padding: 0.5rem 0.8rem; 
-  border-radius: 5px; 
+	color: #007A4D; 
+	padding: 0.5rem 0.8rem; 
+	border-radius: 5px; 
 }
+
 .nav-red {
-  color: #DE3831;
-  padding: 0.5rem 0.8rem; 
-  border-radius: 5px; 
-}
-.nav-blue {
-  color: #002395;
-  padding: 0.5rem 0.8rem; 
-  border-radius: 5px; 
+	color: #DE3831;
+	padding: 0.5rem 0.8rem; 
+	border-radius: 5px; 
 }
 
 .nav-links li a:hover {
@@ -116,7 +113,7 @@ h2 {
 }
 
 .hero {
-  background: url('Truck1.png') center/cover no-repeat;
+  background: url('RealLocation.jpg') center/cover no-repeat;
   height: 90vh;
   display: flex;
   align-items: center;
