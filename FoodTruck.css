@@ -132,7 +132,7 @@ h2 {
 
 .hero-overlay h1 {
   font-size: 3.5rem;
-  color: #FFB612;
+  color: #DE3831;
 }
 
 .hero-overlay p {
@@ -169,7 +169,7 @@ h2 {
 }
 
 .about-text h2 {
-  color: #FFB612;
+  color: #DE3831;
   font-size: 2.5rem;
   margin-bottom: 1rem;
 }
@@ -186,7 +186,7 @@ h2 {
 
 .about-image img {
   width: 70%;
-  border: 6px solid #FFB612;
+  border: 6px solid #DE3831;
   border-radius: 10px;
 }
 
@@ -217,107 +217,26 @@ h2 {
   transform: scale(1.05);
 }
 
-.nl h2 {
-  font-size: 2.5rem;
-  margin-bottom: 1rem;
-  color: #DE3831;
-}
-
-.nl-gallery {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 1rem;
-  margin-top: 2rem;
-  justify-content: center;
-}
-
-.nl img {
-  width: 300px;
-  border-radius: 10px;
-  border: 4px solid #002395;
-}
-
-.sp h2 {
-  font-size: 2.5rem;
-  margin-bottom: 1rem;
-  color: #002395;
-}
-
-.sp-gallery {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 1rem;
-  margin-top: 2rem;
-  justify-content: center;
-}
-
-.sp img {
-  width: 300px;
-  border-radius: 10px;
-  border: 4px solid #FFB612;
-}
-
-.otf h2 {
-  font-size: 2.5rem;
-  margin-bottom: 1rem;
-  color: #FFB612;
-}
-
-.otf-gallery {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 1rem;
-  margin-top: 2rem;
-  justify-content: center;
-}
-
-.otf img {
-  width: 300px;
-  border-radius: 10px;
-  border: 4px solid #007A4D;
-}
-
-.mr h2 {
-  font-size: 2.5rem;
-  margin-bottom: 1rem;
-  color: #007A4D;
-}
-
-.mr-gallery {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 1rem;
-  margin-top: 2rem;
-  justify-content: center;
-}
-
-.mr img {
-  width: 300px;
-  border-radius: 10px;
-  border: 4px solid #002395;
-}
-
 .contact {
-  background: url(Truck3.png) center / cover no-repeat;
   text-align: center;
   padding: 5rem 2rem;
-  background: #222;
+  background: #FFF;
 }
 
 .contact h2 {
   font-size: 2.5rem;
   margin-bottom: 1rem;
-  color: #002395;
+  color: #000;
 }
 
 footer {
-  background: #000;
+  background: #FFF;
   text-align: center;
   padding: 2rem 0rem;
   font-size: 0.9rem;
-  color: #ccc;
+  color: #000;
   width: 100%;
-  margin-bottom: 0;
+  margin-bottom: -10rem;
 }
 
 .divider {
@@ -370,7 +289,7 @@ section {
 
 .contact-overlay {
   text-align: center;
-  background: rgba(0, 0, 0, 0.7);
+  background: rgba(255, 255, 255, 0.7);
   padding: 2rem;
   border-radius: 12px;
 }
@@ -416,21 +335,21 @@ section {
 }
 
 .card {
-  display: inline-block;
+  display: grid;
   grid-template-areas:
-    "title"
-    "image"
-    "text";
-  grid-template-columns: 1.6fr 0.2fr;
+    "title title"
+    "text text"
+    "link link";
+  grid-template-columns: 1.6fr 3fr;
   gap: 0.4rem;
-  max-width: 30vw;
+  max-width: 90vw;
   margin: 0rem auto;
   padding: 2rem;
   border-radius: 12px;
-  color: #fff;
-  background: rgb(0, 0, 0, 0.7);
-  margin: 2vw;
+  color: #000;
+  background: rgb(255, 255, 255, 0.7);
 }
+
 
 .card-title {
   grid-area: title;
@@ -438,34 +357,30 @@ section {
   padding: 0.3rem;
   border-radius: 12px;
   font-size: 4rem;
-  width: 100%;
-  margin-left: 0vw;
   margin-bottom: 2rem;
   font-weight: bold;
-  background: #111;
+  background: #fff;
 }
 
 .card-image {
   grid-area: image;
-  width: 21.5vw;
-  height: 21.5vw;
+  width: 25vw;
+  height: 25vw;
 }
 
 .card-image img {
-  width: 21.5vw;
-  height: 21.5vw;
+  width: 25vw;
+  height: 25vw;
   border-radius: 10px;
   display: block;
-  border: 6px solid #007A4D;
+  border: 6px solid #DE3831;
 }
 
 .card-text {
   grid-area: text;
-  background: #222;
+  background: #fff;
   padding: 1rem;
   border-radius: 10px;
-  margin-top: 2vh;
-  width: 100%;
 }
 
 .card-link a {
@@ -473,7 +388,7 @@ section {
   justify-content: center;  
   align-items: center;       
   padding: 2vw 20vw;     
-  background: #FFB612;       
+  background: #007A4D;   
   color: #000;              
   border-radius: 8px;           
   font-weight: 700;
@@ -484,7 +399,7 @@ section {
 }
 
 .card-link {
-  z-index: 20000;
+  z-index: 200;
   grid-area: link;
   padding: 1rem;
   border-radius: 10px;
@@ -501,88 +416,6 @@ section {
 .card-link a:hover {
   background: #DE3831;
   transform: scale(1.1);
-}
-
-.card2 {
-  display: inline-block;
-  grid-template-areas:
-    "title"
-    "image"
-    "text";
-  grid-template-columns: 1.6fr 0.2fr;
-  gap: 0.4rem;
-  max-width: 20vw;
-  margin: 0rem auto;
-  padding: 2rem;
-  border-radius: 12px;
-  color: #fff;
-  background: rgb(0, 0, 0, 0.7);
-  margin: 2vw;
-}
-
-.card2-title {
-  grid-area: title;
-  text-align: center;
-  padding: 0.3rem;
-  border-radius: 12px;
-  font-size: 4rem;
-  width: 100%;
-  margin-left: 0vw;
-  margin-bottom: 2rem;
-  font-weight: bold;
-  background: #111;
-}
-
-.card2-image {
-  grid-area: image;
-  width: 15vw;
-  height: 15vw;
-}
-
-.card2-image img {
-  width: 15vw;
-  height: 15vw;
-  border-radius: 10px;
-  display: block;
-  border: 6px solid #007A4D;
-}
-
-.card2-text {
-  grid-area: text;
-  background: #222;
-  padding: 1rem;
-  border-radius: 10px;
-  margin-top: 2vh;
-  width: 100%;
-}
-
-
-.card2-link {
-  z-index: 2000;
-  grid-area: link;
-  padding: 1rem;
-  border-radius: 10px;
-  text-align: center;
-}
-
-.card2-link a {
-  display: inline-flex;     
-  justify-content: center;  
-  align-items: center;       
-  padding: 2vw 20vw;     
-  background: #FFB612;       
-  color: #000;              
-  border-radius: 8px;           
-  font-weight: 700;
-  text-decoration: none;     
-  min-width: 150px;      
-  text-align: center;
-  transition: background 0.3s;
-}
-
-.card2-link a:hover {
-  background: #DE3831;
-  transform: scale(1.2);
 }
 
 @media (max-width: 1223px) {
