@@ -24,7 +24,7 @@ h2 {
   margin-left: 1.3vw;
   margin-bottom: 2rem;
   font-weight: bold;
-  background: rgb(0, 0, 0, 0.6);
+  background: #FFF;
 }
 
 .about-text {
@@ -371,7 +371,7 @@ section {
   padding: 2rem;
   border-radius: 12px;
   color: #000;
-  border: 4px solid rgb(0, 0, 0, 0.6);
+  border: 4px solid #FFF;
   background: rgb(255, 255, 255, 0.7);
   margin: 2vw;
   width: 25vw;
