@@ -11,6 +11,24 @@ html, body {
   background: url('RealLocation.jpg') center/cover no-repeat;
 }
 
+h2 {
+  text-align: center;
+  padding: 0.3rem;
+  border-radius: 12px;
+  font-size: 4rem;
+  width: 97.3%;
+  margin-left: 1.3vw;
+  margin-bottom: 2rem;
+  font-weight: bold;
+  background: #111;
+}
+
+.about-text {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
 /* Background Classes */
 .BG {
   background: url('RealLocation.jpg') center/cover no-repeat;
@@ -349,6 +367,7 @@ section {
   color: #000;
   border: 4px solid black;
   background: rgb(255, 255, 255, 0.7);
+  margin: 2vw;
 }
 
 .card-title {
@@ -383,6 +402,8 @@ section {
   background: #fff;
   padding: 1rem;
   border-radius: 10px;
+  margin-top: 2vh;
+  width: 100%;
 }
 
 .card-link a {
@@ -401,7 +422,7 @@ section {
 }
 
 .card-link {
-  z-index: 200;
+  z-index: 20000;
   grid-area: link;
   padding: 1rem;
   border-radius: 10px;
