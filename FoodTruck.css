@@ -31,6 +31,8 @@ h2 {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
+	background: rgb(255, 255, 255, 0.7);
+	border-radius: 12px;
 }
 
 /* Background Classes */
