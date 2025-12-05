@@ -4,21 +4,40 @@
   box-sizing: border-box;
 }
 
+.startersbg {
+  background: url('Building.jpg') center/cover no-repeat;
+}
+
 html, body {
   height: 100%;
   font-family: 'Barlow Condensed', sans-serif;
   color: #000;
-  background: url('Background.jpg') center/cover no-repeat;
+  background: url('RealLocation.jpg') center/cover no-repeat;
+}
+
+h2 {
+  text-align: center;
+  padding: 0.3rem;
+  border-radius: 12px;
+  font-size: 4rem;
+  width: 97.3%;
+  margin-left: 1.3vw;
+  margin-bottom: 2rem;
+  font-weight: bold;
+  background: #FFF;
+}
+
+.about-text {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+	background: rgb(255, 255, 255, 0.7);
+	border-radius: 12px;
 }
 
 /* Background Classes */
 .BG {
-  background: url('Background.jpg') center/cover no-repeat;
-}
-
-.RestaurantBG {
-  background: url('Building.jpg') center/cover no-repeat;
-  height: 130vh;
+  background: url('RealLocation.jpg') center/cover no-repeat;
 }
 
 .FoodTruckBG {
@@ -341,19 +360,21 @@ section {
 
 /* Card Styles */
 .card {
-  display: grid;
+  display: inline-block;
   grid-template-areas:
-    "title title"
-    "text text"
-    "link link";
-  grid-template-columns: 1.6fr 3fr;
+    "title"
+    "image"
+    "text";
+  grid-template-columns: 1.6fr 0.2fr;
   gap: 0.4rem;
-  max-width: 90vw;
   margin: 0rem auto;
   padding: 2rem;
   border-radius: 12px;
   color: #000;
+  border: 4px solid #FFF;
   background: rgb(255, 255, 255, 0.7);
+  margin: 2vw;
+  width: 25vw;
 }
 
 .card-title {
@@ -362,6 +383,8 @@ section {
   padding: 0.3rem;
   border-radius: 12px;
   font-size: 4rem;
+  width: 100%;
+  margin-left: 0vw;
   margin-bottom: 2rem;
   font-weight: bold;
   background: #fff;
@@ -369,13 +392,13 @@ section {
 
 .card-image {
   grid-area: image;
-  width: 25vw;
-  height: 25vw;
+  width: 21.5vw;
+  height: 21.5vw;
 }
 
 .card-image img {
-  width: 25vw;
-  height: 25vw;
+  width: 19.5vw;
+  height: 19.5vw;
   border-radius: 10px;
   display: block;
   border: 6px solid #DE3831;
@@ -386,6 +409,8 @@ section {
   background: #fff;
   padding: 1rem;
   border-radius: 10px;
+  margin-top: 2vh;
+  width: 100%;
 }
 
 .card-link a {
@@ -404,7 +429,7 @@ section {
 }
 
 .card-link {
-  z-index: 200;
+  z-index: 20000;
   grid-area: link;
   padding: 1rem;
   border-radius: 10px;
